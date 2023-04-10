@@ -1,0 +1,554 @@
+{
+	"info": {
+		"_postman_id": "2e3537ac-9c5f-4ad1-805b-19c5609219d5",
+		"name": "gorest.co.in",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18822699"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users?page=12",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users_4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users_5",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1af6bc10bc51e7e5ee5a614949659147693240725230d68d1b59bcff63664d62",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"name\": \"Vitaliy Kruglik\",\r\n        \"email\": \"makafakas12@gmail.com\",\r\n        \"gender\": \"male\",\r\n        \"status\": \"active\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users_6",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users?id=828453",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "828453"
+						},
+						{
+							"key": "name",
+							"value": "Vitaliy Kruglik",
+							"disabled": true
+						},
+						{
+							"key": "status",
+							"value": "active",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users_7",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1af6bc10bc51e7e5ee5a614949659147693240725230d68d1b59bcff63664d62",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Vitaliy Kruglik\",\r\n        \"email\": \"makafakas111@gmail.com\",\r\n        \"gender\": \"male\",\r\n        \"status\": \"active\"\r\n    }\r\n//     {\r\n//         \"name\": \"Vitaliy Kruglik\",\r\n//         \"email\": \"makafakas10@gmail.com\",\r\n//         \"gender\": \"male\",\r\n//         \"status\": \"active\"\r\n//     },\r\n//     {\r\n//         \"name\": \"Vitaliy Kruglik\",\r\n//         \"email\": \"makafakas09@gmail.com\",\r\n//         \"gender\": \"male\",\r\n//         \"status\": \"active\"\r\n//     },\r\n//     {\r\n//         \"name\": \"Vitaliy Kruglik\",\r\n//         \"email\": \"makafakas08@gmail.com\",\r\n//         \"gender\": \"male\",\r\n//         \"status\": \"active\"\r\n//     },\r\n//     {\r\n//         \"name\": \"Vitaliy Kruglik\",\r\n//         \"email\": \"makafakas07@gmail.com\",\r\n//         \"gender\": \"male\",\r\n//         \"status\": \"active\"\r\n//     },\r\n//     {\r\n//         \"name\": \"Vitaliy Kruglik\",\r\n//         \"email\": \"makafakas06@gmail.com\",\r\n//         \"gender\": \"male\",\r\n//         \"status\": \"active\"\r\n//     },\r\n//     {\r\n//         \"name\": \"Vitaliy Kruglik\",\r\n//         \"email\": \"makafakas05@gmail.com\",\r\n//         \"gender\": \"male\",\r\n//         \"status\": \"active\"\r\n//     },\r\n//     {\r\n//         \"name\": \"Vitaliy Kruglik\",\r\n//         \"email\": \"makafakas04@gmail.com\",\r\n//         \"gender\": \"male\",\r\n//         \"status\": \"active\"\r\n//     },\r\n//     {\r\n//         \"name\": \"Vitaliy Kruglik\",\r\n//         \"email\": \"makafakas03@gmail.com\",\r\n//         \"gender\": \"male\",\r\n//         \"status\": \"active\"\r\n//     },\r\n//     {\r\n//         \"name\": \"Vitaliy Kruglik\",\r\n//         \"email\": \"makafakas02@gmail.com\",\r\n//         \"gender\": \"male\",\r\n//         \"status\": \"active\"\r\n//     }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users_7.1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users?name=Vitaliy Kruglik",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Vitaliy Kruglik"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users_8",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Vitaliy Cobain\",\r\n    \"email\": \"makafakas0011@gmail.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/828453",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"828453"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users_8.1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users?id=828453",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "828453"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users_9",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"LOVEmakafakas019@gmail.com\",\r\n    \"status\": \"inactive\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/828453",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"828453"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users_10",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/828430",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"828430"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "828430",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users_10.1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/828430",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"828430"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "828430",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users_11",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/828432",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"828432"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "1af6bc10bc51e7e5ee5a614949659147693240725230d68d1b59bcff63664d62",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
